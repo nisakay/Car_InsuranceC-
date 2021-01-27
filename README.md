@@ -1,3 +1,3 @@
-# Car_InsuranceC-
+# Car_Insurance C#
 
-Created a Car Insurance quote generator.
+Created a Car Insurance quote generator using .NET Framework.

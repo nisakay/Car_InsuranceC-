@@ -208,11 +208,11 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Insuree\Create.cshtml" />
-    <Content Include="Views\Insuree\Delete.cshtml" />
-    <Content Include="Views\Insuree\Details.cshtml" />
-    <Content Include="Views\Insuree\Edit.cshtml" />
-    <Content Include="Views\Insuree\Index.cshtml" />
+    <Content Include="Views\Insurees\Create.cshtml" />
+    <Content Include="Views\Insurees\Delete.cshtml" />
+    <Content Include="Views\Insurees\Details.cshtml" />
+    <Content Include="Views\Insurees\Edit.cshtml" />
+    <Content Include="Views\Insurees\Index.cshtml" />
     <Content Include="Views\Home\Admin.cshtml" />
   </ItemGroup>
   <ItemGroup />

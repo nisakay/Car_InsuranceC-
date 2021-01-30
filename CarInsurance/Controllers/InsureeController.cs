@@ -46,7 +46,7 @@ namespace CarInsurances.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,FirstName,LastName,EmailAddress,DateOfBirth,CarYear,CarMake,CarModel,DUI,SpeedingTickects,CoverageType,Quote")] Insuree insuree)
+        public ActionResult Create([Bind(Include = "Id,FirstName,LastName,EmailAddress,DateOfBirth,CarYear,CarMake,CarModel,DUI,SpeedingTickets,CoverageType,Quote")] Insuree insuree)
         {
             if (ModelState.IsValid)
             {
@@ -97,7 +97,9 @@ namespace CarInsurances.Controllers
                 //Add $10 to the monthly total for every speeding ticket the user has
                 if (insuree.SpeedingTickets >= 1)
                 {
-                    insuree.Quote += 10;
+                    int TicketsTotal = insuree.SpeedingTickets * 10; 
+                    insuree.Quote += TicketsTotal;
+                    
                 }
 
                 //If the user has ever had a DUI, add 25% to the total
